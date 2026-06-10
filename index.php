@@ -30,7 +30,7 @@
               <h5 class="card-title">Dodge</h5>
               <p class="card-text">A Dodge foi fundada em 1914 pelos irmãos John e Horace Dodge. Inicialmente uma fabricante de peças e motores em Detroit, a marca destacou-se por sua alta qualidade mecânica. Conhecida por lançar veículos potentes, robustos e inovadores, ela se consolidou como um dos maiores ícones da engenharia automotiva americana.</p>
  
-              <a href="#" class="btn btn-primary mt-auto">Go somewhere</a>
+              <a  class="btn btn-primary mt-auto">Dodge</a>
             </div>
           </div>
         </div>
@@ -41,7 +41,7 @@
             <div class="card-body d-flex flex-column">
               <h5 class="card-title">Ford</h5>
               <p class="card-text">A Ford Motor Company foi fundada em 1903 nos Estados Unidos por Henry Ford. Ela revolucionou a indústria global ao introduzir a linha de montagem e o fordismo, modelo de produção em massa que barateou os veículos e popularizou o automóvel, transformando o transporte e a economia mundial.</p>
-              <a href="#" class="btn btn-primary mt-auto">Go somewhere</a>
+              <a  class="btn btn-primary mt-auto">Ford</a>
             </div>
           </div>
         </div>
@@ -52,7 +52,7 @@
             <div class="card-body d-flex flex-column">
               <h5 class="card-title">BMW</h5>
               <p class="card-text">A BMW (Bayerische Motoren Werke, ou Fábrica de Motores da Baviera) nasceu em 1916 na Alemanha. Inicialmente focada na fabricação de motores de avião, a marca foi forçada a se reinventar após a Primeira Guerra Mundial e hoje é um dos maiores impérios mundiais de veículos de luxo e alto desempenho.</p>
-              <a href="#" class="btn btn-primary mt-auto">Go somewhere</a>
+              <a  class="btn btn-primary mt-auto">BMW</a>
             </div>
           </div>
         </div>
@@ -63,7 +63,7 @@
             <div class="card-body d-flex flex-column">
               <h5 class="card-title">Chevrolet</h5>
               <p class="card-text">A Chevrolet (General Motors) iniciou suas atividades no Brasil em janeiro de 1925, no bairro do Ipiranga, em São Paulo. Ao longo de mais de um século, a montadora consolidou-se como uma das maiores potências automotivas do país, destacando-se por veículos que se tornaram símbolos de diferentes épocas.</p>
-              <a href="#" class="btn btn-primary mt-auto">Go somewhere</a>
+              <a class="btn btn-primary mt-auto">Chevrolet</a>
             </div>
           </div>
         </div>
