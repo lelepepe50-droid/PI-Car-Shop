@@ -3,7 +3,7 @@ $titulo_da_pagina = "Cadastrar Vendedor";
 include "inc-cabecalho.php"
 ?>
 
-<body class="d-flex flex-column min-vh-100">
+<body class="d-flex flex-column min-vh-100 bg-secondary">
 
   <?php include "inc-menu.php" ?>
 
