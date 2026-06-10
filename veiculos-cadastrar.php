@@ -1,5 +1,5 @@
 <?php 
-$titulo_da_pagina = "Cadastrar veiculo";
+$titulo_da_pagina = "Cadastrar veiculos";
 include "inc-cabecalho.php"
 ?>
 
@@ -43,6 +43,15 @@ include "inc-cabecalho.php"
                             <label for="quilometragem" class="form-label">Quilometragem</label>
                             <input type="text" name="quilometragem" id="quilometragem" class="form-control" placeholder="Digite a quilometragem">
                         </div>
+
+                        <!-- 5. Placa -->
+                        <div class="mb-3">
+                            <label for="placa" class="form-label">Placa</label>
+                            <input type="text" name="placa" id="placa" class="form-control" placeholder="Digite a placa">
+                        </div>
+
+
+
                         <!-- 6. Combustível -->
 
                         <div class="mb-3">
@@ -56,13 +65,13 @@ include "inc-cabecalho.php"
                             </select>
                         </div>
                          
-
-                         <div class="campo-formulario">
-                           <label for="foto">Foto:</label>
-                          <input type="text" name="foto" id="foto">
+                        <!-- 7. Foto -->
+                        <div class="mb-3">
+                            <label for="placa" class="form-label">Foto</label>
+                            <input type="text" name="foto" id="foto" class="form-control" placeholder="Coloque o link da foto">
                         </div>
 
-                        <!-- 7. Cor -->
+                        <!-- 8. Cor -->
                         <div class="mb-4">
                             <label for="cor" class="form-label">Cor</label>
                             <input type="text" name="cor" id="cor" class="form-control" placeholder="Digite a cor">
