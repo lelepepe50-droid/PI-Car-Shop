@@ -1,32 +1,37 @@
 <?php
+$titulo_da_pagina = "cliente cadastrar";
+include "inc-cabecalho.php";
 include "inc-conexao.php";
+
+$id = $_GET['id_cliente'];
  
-// Capturar os dados
-$id_cliente = $_GET['id_cliente'] ?? null;
-$nome = $_POST['nome'] ?? '';
-$cpf = $_POST['cpf'] ?? '';
-$email = $_POST['email'] ?? '';
-$telefone = $_POST['telefone'] ?? '';
-$senha = $_POST['senha'] ?? '';
+$sql = "select * from tb_discografia where id = $id_cliente";
+$resultado = mysqli_query($conexao, $sql);
  
-// Montar a query usando '?' como marcadores (Prepared Statement)
-$sql = "UPDATE tb_cliente SET nome=?, cpf=?, email=?, telefone=?, senha=? WHERE id_cliente=?";
- 
-// Preparar a declaração
-$stmt = mysqli_prepare($conexao, $sql);
- 
-if ($stmt) {
-    // "sssssi" significa: 5 strings (s) e 1 inteiro (i)
-    mysqli_stmt_bind_param($stmt, "sssssi", $nome, $cpf, $email, $telefone, $senha, $id_cliente);
-    // Executar a declaração
-    mysqli_stmt_execute($stmt);
-    // Fechar a declaração
-    mysqli_stmt_close($stmt);
+$foto = $nome = $cpf = $email = $telefone = $senha = "";
+while($linha = mysqli_fetch_assoc($resultado)){
+    $nome = $linha['nome'];
+    $$cpf = $linha['cpf'];
+    $email = $linha['email'];
+    $telefone = $linha['telefone'];
+    $senha = $linha['senha'];
 }
- 
-mysqli_close($conexao);
- 
-// Redirecionar
-header('Location: cliente_listagem.php');
-exit;
 ?>
+<body>
+    <?php include "inc-menu.php";?>
+    <main class="container mt-5">
+        <h1>Visualizar cliente </h1>
+    <div class= "letra-cor">
+       <img src="<?=$nome; ?>" alt="<?=$cpf; ?>" class= "cliente tabela"> <br>
+        nome:    <?=$nome; ?> <br>
+        cpf:   <?=$cpf; ?> <br>
+        email: <?=$email; ?>    <br>
+        telefone:   <?=$telefone; ?> <br>
+        senha:   <?=$senha; ?> <br>
+    </div>
+    </main>
+ 
+    <?php include "inc-rodape.php"?>
+</body>
+ 
+ 
