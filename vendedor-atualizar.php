@@ -1,5 +1,5 @@
 <?php
-$id_cliente = $_GET['id_vendedor'];
+$id_vendedor = $_GET['id_vendedor'];
 $nome = $_POST['nome'];
 $cpf = $_POST['cpf'];
 $email = $_POST['email'];
