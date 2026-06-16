@@ -1,5 +1,4 @@
 <?php
-// 1. Captura o ID que veio lá do link da listagem
 $id_cliente = $_GET['id_cliente'] ?? null;
 
 if (!$id_cliente) {
@@ -8,7 +7,6 @@ if (!$id_cliente) {
 
 include "inc-conexao.php";
 
-// 2. SE O USUÁRIO CLICOU EM "SALVAR" (Envio via POST)
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $nome     = $_POST['nome'];
     $cpf      = $_POST['cpf'];
@@ -16,18 +14,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $telefone = $_POST['telefone'];
     $senha    = $_POST['senha'];
 
-    // Faz a atualização no banco de dados
     $sql_update = "update tb_cliente set nome='{$nome}', cpf='{$cpf}', email='{$email}', telefone='{$telefone}', senha='{$senha}' where id_cliente={$id_cliente}";
     mysqli_query($conexao, $sql_update);
 
     mysqli_close($conexao);
     
-    // Redireciona de volta para a listagem
     header('Location: cliente-listagem.php');
     exit;
 }
 
-// 3. SE O USUÁRIO ACABOU DE CHEGAR DA LISTAGEM (Apenas carregar os dados na tela)
 $sql_busca = "select * from tb_cliente where id_cliente = {$id_cliente}";
 $resultado = mysqli_query($conexao, $sql_busca);
 

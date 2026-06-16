@@ -1,7 +1,7 @@
 <?php 
 $titulo_da_pagina = "Listagem de Cliente";
 include "inc-cabecalho.php";
-include "inc-menu.php"; // Adicionado ponto e vírgula que faltava
+include "inc-menu.php";
 ?>
 
 <body class="d-flex flex-column min-vh-100">
@@ -38,7 +38,7 @@ include "inc-menu.php"; // Adicionado ponto e vírgula que faltava
                 echo "<td> {$linha_resultado['telefone']} </td>";
                 echo "<td>";
                 echo " <a href='cliente-atualizar.php?id_cliente={$linha_resultado['id_cliente']}' class='btn btn-sm btn-warning'>Atualizar</a> ";
-                echo " <a href='cliente-excluir.php?id={$linha_resultado['id_cliente']}' class='btn btn-sm btn-danger'>Excluir</a> ";
+                echo " <a href='cliente-excluir.php?id_cliente={$linha_resultado['id_cliente']}' class='btn btn-sm btn-danger'>Excluir</a> ";
                 echo "</td>";
                 echo "</tr>";
             }

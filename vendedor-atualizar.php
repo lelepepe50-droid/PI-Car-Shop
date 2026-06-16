@@ -7,7 +7,7 @@ $telefone = $_POST['telefone'];
 $senha = $_POST['senha'];
  
 include "inc-conexao.php";
-$sql = "update tb_cliente set id_vendedor='{$id_vendedor}', nome='{$nome}', cpf={$cpf}, email='{$email}', telefone='{$telefone}', senha='{$senha}' where id_cliente={$id_cliente}";
+$sql = "update tb_cliente set id_vendedor='{$id_vendedor}', nome='{$nome}', cpf={$cpf}, email='{$email}', telefone='{$telefone}', senha='{$senha}' where id_cliente={$id_vendedor}";
 $resultado = mysqli_query($conexao, $sql);
  
 mysqli_close($conexao);
