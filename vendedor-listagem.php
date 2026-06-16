@@ -4,7 +4,7 @@ include "inc-cabecalho.php";
 include "inc-menu.php"; // Adicionado ponto e vírgula que faltava
 ?>
 
-<body class="d-flex flex-column min-vh-100">
+<body class="d-flex flex-column min-vh-100 bg-secondary">
     <main class="container">
         <h1>listagem de vendedor</h1>
         <div class="row">

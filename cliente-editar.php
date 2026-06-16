@@ -14,7 +14,7 @@ while($linha = mysqli_fetch_assoc($resultado)){
 $titulo_da_pagina = "Editar cliente";
 include "inc-cabecalho.php";
 ?>
-<body>
+<body class="bg-secondary">
     <?php include "inc-menu.php"; ?>
     <main class="container">
         <h1>Editar Cliente: <?= $nome?></h1>
