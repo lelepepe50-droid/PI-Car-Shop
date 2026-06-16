@@ -1,16 +1,16 @@
 <?php 
-$titulo_da_pagina = "Listagem de ";
+$titulo_da_pagina = "Listagem de veiculos";
 include "inc-cabecalho.php";
 include "inc-menu.php"; // Adicionado ponto e vírgula que faltava
 ?>
 
 <body class="d-flex flex-column min-vh-100">
-    <main class="container">
-        <h1>listagem de cliente</h1>
+    <main class="container pt-3 mb-2">
+        <h1>listagem de veiculos</h1>
         <div class="row">
          <div class="col">
             <!-- Corrigido o link que estava incompleto e sem fechar a tag <a> -->
-            <a href="cliente-cadastrar.php" class="btn btn-primary mb-3">Cadastrar Novo Cliente</a>
+            <a href="veiculos-cadastrar.php" class="btn btn-primary mb-3">Cadastrar Novo veiculo</a>
          </div>   
         </div>
 
@@ -34,7 +34,7 @@ include "inc-menu.php"; // Adicionado ponto e vírgula que faltava
             include "inc-conexao.php";
             
             #consultar os dados (Corrigido erro de digitação no comentário)
-            $sql = "select * from tb_cliente order by id_carro, marca, modelo, ano, quilometragem, placa, foto, cor, preco";
+            $sql = "select * from tb_carro order by id_carro, marca, modelo, ano, quilometragem, placa, foto, cor, preco";
             $resultado = mysqli_query($conexao, $sql);
 
             #listagem de clientes
@@ -52,8 +52,8 @@ include "inc-menu.php"; // Adicionado ponto e vírgula que faltava
 
                 // Agrupando as ações na mesma coluna <td> para organizar a tabela
                 echo "<td>";
-                echo " <a href='cliente-atualizar.php?id_cliente={$linha_resultado['id_carro']}' class='btn btn-sm btn-warning'>Atualizar</a> ";
-                echo " <a href='cliente-excluir.php?id={$linha_resultado['id_carro']}' class='btn btn-sm btn-danger'>Excluir</a> ";
+                echo " <a href='veiculos-atualizar.php?id_carro={$linha_resultado['id_carro']}' class='btn btn-sm btn-warning'>Atualizar</a> ";
+                echo " <a href='veiculos-excluir.php?id={$linha_resultado['id_carro']}' class='btn btn-sm btn-danger'>Excluir</a> ";
                 echo "</td>";
                 echo "</tr>";
             }

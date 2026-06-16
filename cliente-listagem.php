@@ -20,9 +20,7 @@ include "inc-menu.php"; // Adicionado ponto e vírgula que faltava
             <tr>
             <th>id_cliente</th>
             <th>nome</th>
-            <th>cpf</th>
             <th>telefone</th>
-            <th>email</th>
             <th scope="col">Ações</th>
             </tr>
             <?php
@@ -37,10 +35,7 @@ include "inc-menu.php"; // Adicionado ponto e vírgula que faltava
                 echo "<tr>";
                 echo "<td> {$linha_resultado['id_cliente']} </td>";
                 echo "<td> {$linha_resultado['nome']} </td>";
-                echo "<td> {$linha_resultado['cpf']} </td>";
                 echo "<td> {$linha_resultado['telefone']} </td>";
-                echo "<td> {$linha_resultado['email']} </td>";
-
                 echo "<td>";
                 echo " <a href='cliente-atualizar.php?id_cliente={$linha_resultado['id_cliente']}' class='btn btn-sm btn-warning'>Atualizar</a> ";
                 echo " <a href='cliente-excluir.php?id={$linha_resultado['id_cliente']}' class='btn btn-sm btn-danger'>Excluir</a> ";
