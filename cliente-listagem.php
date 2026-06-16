@@ -21,16 +21,14 @@ include "inc-menu.php"; // Adicionado ponto e vírgula que faltava
             <th>id_cliente</th>
             <th>nome</th>
             <th>cpf</th>
-            <th>email</th>
             <th>telefone</th>
-            <th>senha</th>
+            <th>email</th>
             <th scope="col">Ações</th>
             </tr>
             <?php
             #abrir conexão
             include "inc-conexao.php";
             
-            #consultar os dados (Corrigido erro de digitação no comentário)
             $sql = "select * from tb_cliente order by id_cliente, nome, cpf, email, telefone, senha";
             $resultado = mysqli_query($conexao, $sql);
 
@@ -40,11 +38,9 @@ include "inc-menu.php"; // Adicionado ponto e vírgula que faltava
                 echo "<td> {$linha_resultado['id_cliente']} </td>";
                 echo "<td> {$linha_resultado['nome']} </td>";
                 echo "<td> {$linha_resultado['cpf']} </td>";
-                echo "<td> {$linha_resultado['email']} </td>";
                 echo "<td> {$linha_resultado['telefone']} </td>";
-                echo "<td> {$linha_resultado['senha']} </td>";
+                echo "<td> {$linha_resultado['email']} </td>";
 
-                // Agrupando as ações na mesma coluna <td> para organizar a tabela
                 echo "<td>";
                 echo " <a href='cliente-atualizar.php?id_cliente={$linha_resultado['id_cliente']}' class='btn btn-sm btn-warning'>Atualizar</a> ";
                 echo " <a href='cliente-excluir.php?id={$linha_resultado['id_cliente']}' class='btn btn-sm btn-danger'>Excluir</a> ";
@@ -52,7 +48,7 @@ include "inc-menu.php"; // Adicionado ponto e vírgula que faltava
                 echo "</tr>";
             }
             #fechar conexão
-            mysqli_close($conexao); // Adicionado ponto e vírgula que faltava
+            mysqli_close($conexao);
             ?>
                 </table>
             </div>    

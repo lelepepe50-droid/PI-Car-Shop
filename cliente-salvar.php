@@ -26,5 +26,3 @@ if($resultado){
 mysqli_close($conexao);
 header('location:cliente-cadastrar.php');
 ?>
-
-

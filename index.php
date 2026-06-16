@@ -9,7 +9,7 @@ include "inc-cabecalho.php"
  
     <?php include "inc-menu.php" ?>
  
-    <div class="container text-center pt-3 mb-1">
+    <div class="container text-center pt-3 mb-2">
  
       <div class="row g-3">
  
