@@ -16,13 +16,13 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `tb_carros`
+-- Table structure for table `tb_carro`
 --
 
-DROP TABLE IF EXISTS `tb_carros`;
+DROP TABLE IF EXISTS `tb_carro`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `tb_carros` (
+CREATE TABLE `tb_carro` (
   `id_carro` int(11) NOT NULL AUTO_INCREMENT,
   `placa` varchar(10) NOT NULL,
   `modelo` varchar(100) NOT NULL,
@@ -31,17 +31,20 @@ CREATE TABLE `tb_carros` (
   `cor` varchar(30) NOT NULL,
   `quilometragem` decimal(10,0) NOT NULL,
   `foto` varchar(1000) NOT NULL,
+  `preco` decimal(10,0) NOT NULL,
+  `status` varchar(30) NOT NULL DEFAULT 'disponivel',
   PRIMARY KEY (`id_carro`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `tb_carros`
+-- Dumping data for table `tb_carro`
 --
 
-LOCK TABLES `tb_carros` WRITE;
-/*!40000 ALTER TABLE `tb_carros` DISABLE KEYS */;
-/*!40000 ALTER TABLE `tb_carros` ENABLE KEYS */;
+LOCK TABLES `tb_carro` WRITE;
+/*!40000 ALTER TABLE `tb_carro` DISABLE KEYS */;
+INSERT INTO `tb_carro` VALUES (1,'BVdZ24FG','DASASAS','SASAS',2009,'Prata',140000,'https://s3.ecompletocarros.dev/images/lojas/141/veiculos/46143/veiculoInfoVeiculoImagesMobile/vehicle_image_1606831801_52aa97c1be82b0c914c9a43ff9f0c1fd.jpeg',32000,'disponivel');
+/*!40000 ALTER TABLE `tb_carro` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -59,7 +62,7 @@ CREATE TABLE `tb_cliente` (
   `telefone` varchar(20) NOT NULL,
   `senha` varchar(225) NOT NULL,
   PRIMARY KEY (`id_cliente`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -68,6 +71,7 @@ CREATE TABLE `tb_cliente` (
 
 LOCK TABLES `tb_cliente` WRITE;
 /*!40000 ALTER TABLE `tb_cliente` DISABLE KEYS */;
+INSERT INTO `tb_cliente` VALUES (1,'dsadsadsadsasdadad','000.000.000-55','dsadssdasdasda@gmail.com','(11) 99999-9999','dssdasdsasda'),(2,'','','','','');
 /*!40000 ALTER TABLE `tb_cliente` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -84,7 +88,7 @@ CREATE TABLE `tb_vendedor` (
   `cpf` varchar(14) NOT NULL,
   `email` varchar(100) NOT NULL,
   `telefone` varchar(20) NOT NULL,
-  `Column1` varchar(225) NOT NULL,
+  `senha` varchar(225) NOT NULL,
   PRIMARY KEY (`id_vendedor`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -111,4 +115,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-06-08 21:40:43
+-- Dump completed on 2026-06-16 19:34:20
