@@ -44,25 +44,6 @@ include "inc-cabecalho.php";
 
     </div>
 
-    <div class="row g-4 text-center my-5 bg-white py-4 rounded-3 shadow-sm border">
-      <div class="col-6 col-md-3">
-        <div class="stat-number">+10</div>
-        <div class="text-uppercase text-muted small fw-bold">Anos de Mercado</div>
-      </div>
-      <div class="col-6 col-md-3">
-        <div class="stat-number">+5k</div>
-        <div class="text-uppercase text-muted small fw-bold">Clientes Satisfeitos</div>
-      </div>
-      <div class="col-6 col-md-3">
-        <div class="stat-number">100%</div>
-        <div class="text-uppercase text-muted small fw-bold">Carros Periciados</div>
-      </div>
-      <div class="col-6 col-md-3">
-        <div class="stat-number">24h</div>
-        <div class="text-uppercase text-muted small fw-bold">Suporte e Pós-Venda</div>
-      </div>
-    </div>
-
     <div class="row g-4 my-4">
       <div class="col-md-4">
         <div class="card card-premium h-100 p-4 shadow-sm bg-white">
