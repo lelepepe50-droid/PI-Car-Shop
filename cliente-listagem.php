@@ -5,7 +5,7 @@ include "inc-menu.php";
 ?>
 
 <body class="d-flex flex-column min-vh-100 bg-secondary">
-    <main class="container">
+    <main class="container pt-3 mb-2">
         <h1>listagem de cliente</h1>
         <div class="row">
          <div class="col">
@@ -37,6 +37,7 @@ include "inc-menu.php";
                 echo "<td> {$linha_resultado['nome']} </td>";
                 echo "<td> {$linha_resultado['telefone']} </td>";
                 echo "<td>";
+                echo " <a href='cliente-visualizar.php?id_cliente={$linha_resultado['id_cliente']}' class='btn btn-sm btn-info text-white'>Visualizar</a> ";
                 echo " <a href='cliente-atualizar.php?id_cliente={$linha_resultado['id_cliente']}' class='btn btn-sm btn-warning'>Atualizar</a> ";
                 echo " <a href='cliente-excluir.php?id_cliente={$linha_resultado['id_cliente']}' class='btn btn-sm btn-danger'>Excluir</a> ";
                 echo "</td>";
