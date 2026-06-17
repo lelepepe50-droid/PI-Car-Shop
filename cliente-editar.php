@@ -24,10 +24,6 @@ include "inc-cabecalho.php";
                 <input type="text" name="nome" class="form-control" value="<?= $nome ?>">
             </div>
             <div class="mb-2">
-                <label class="form-label">CPF:</label>
-                <input type="text" name="cpf" class="form-control" value="<?= $cpf ?>">
-            </div>
-            <div class="mb-2">
                 <label class="form-label">Email:</label>
                 <input type="email" name="email" class="form-control" value="<?= $email ?>">
             </div>
