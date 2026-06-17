@@ -1,0 +1,144 @@
+<div class="container my-5 text-center">
+    <h3 class="mb-4">Navegue por Marcas</h3>
+
+    <div id="carrosselMarcas" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <div class="d-flex justify-content-center gap-4">
+                    <a href="https://www.toyota.com.br" target="_blank" class="text-center marca-link">
+                        <div class="marca-bola"><img src="logo_marcas/toyota.png" alt="Toyota"></div>
+                        <small class="text-muted d-block mt-2">Toyota</small>
+                    </a>
+                    <a href="https://www.honda.com.br" target="_blank" class="text-center marca-link">
+                        <div class="marca-bola"><img src="logo_marcas/honda.png" alt="Honda"></div>
+                        <small class="text-muted d-block mt-2">Honda</small>
+                    </a>
+                    <a href="https://www.hyundai.com.br" target="_blank" class="text-center marca-link">
+                        <div class="marca-bola"><img src="logo_marcas/hyundai.png" alt="Hyundai"></div>
+                        <small class="text-muted d-block mt-2">Hyundai</small>
+                    </a>
+                    <a href="https://www.renault.com.br" target="_blank" class="text-center marca-link">
+                        <div class="marca-bola"><img src="logo_marcas/renault.png" alt="Renault"></div>
+                        <small class="text-muted d-block mt-2">Renault</small>
+                    </a>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="d-flex justify-content-center gap-4">
+                    <a href="https://www.chevrolet.com.br" target="_blank" class="text-center marca-link">
+                        <div class="marca-bola"><img src="logo_marcas/chevrolet.png" alt="Chevrolet"></div>
+                        <small class="text-muted d-block mt-2">Chevrolet</small>
+                    </a>
+                    <a href="https://www.fiat.com.br" target="_blank" class="text-center marca-link">
+                        <div class="marca-bola"><img src="logo_marcas/fiat.png" alt="Fiat"></div>
+                        <small class="text-muted d-block mt-2">Fiat</small>
+                    </a>
+                    <a href="https://www.vw.com.br" target="_blank" class="text-center marca-link">
+                        <div class="marca-bola"><img src="logo_marcas/volkswagen.png" alt="Volkswagen"></div>
+                        <small class="text-muted d-block mt-2">Volkswagen</small>
+                    </a>
+                    <a href="https://www.ford.com.br" target="_blank" class="text-center marca-link">
+                        <div class="marca-bola"><img src="logo_marcas/ford.png" alt="Ford"></div>
+                        <small class="text-muted d-block mt-2">Ford</small>
+                    </a>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="d-flex justify-content-center gap-4">
+                    <a href="#" target="_blank" class="text-center marca-link">
+                        <div class="marca-bola"><img src="logo_marcas/ram.png" alt="RAM"></div>
+                        <small class="text-muted d-block mt-2">RAM</small>
+                    </a>
+                    <a href="#" target="_blank" class="text-center marca-link">
+                        <div class="marca-bola"><img src="logo_marcas/corvette.png" alt="Corvette"></div>
+                        <small class="text-muted d-block mt-2">Corvette</small>
+                    </a>
+                    <a href="#" target="_blank" class="text-center marca-link">
+                        <div class="marca-bola"><img src="logo_marcas/chrysler.png" alt="Chrysler"></div>
+                        <small class="text-muted d-block mt-2">Chrysler</small>
+                    </a>
+                    <a href="#" target="_blank" class="text-center marca-link">
+                        <div class="marca-bola"><img src="logo_marcas/alfa_romeo.png" alt="Alfa Romeo"></div>
+                        <small class="text-muted d-block mt-2">Alfa Romeo</small>
+                    </a>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="d-flex justify-content-center gap-4">
+                    <a href="https://caoachery.com.br" target="_blank" class="text-center marca-link">
+                        <div class="marca-bola"><img src="logo_marcas/caoa_chery.png" alt="Caoa Chery"></div>
+                        <small class="text-muted d-block mt-2">Caoa Chery</small>
+                    </a>
+                    <a href="https://www.jacmotorsbrasil.com.br" target="_blank" class="text-center marca-link">
+                        <div class="marca-bola"><img src="logo_marcas/jac_motors.png" alt="JAC Motors"></div>
+                        <small class="text-muted d-block mt-2">JAC Motors</small>
+                    </a>
+                    <a href="#" target="_blank" class="text-center marca-link">
+                        <div class="marca-bola"><img src="logo_marcas/mazda.png" alt="Mazda"></div>
+                        <small class="text-muted d-block mt-2">Mazda</small>
+                    </a>
+                    <a href="#" target="_blank" class="text-center marca-link">
+                        <div class="marca-bola"><img src="logo_marcas/isuzu.png" alt="Isuzu"></div>
+                        <small class="text-muted d-block mt-2">Isuzu</small>
+                    </a>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="d-flex justify-content-center gap-4">
+                    <a href="https://www.bmw.com.br" target="_blank" class="text-center marca-link">
+                        <div class="marca-bola"><img src="logo_marcas/bmw.png" alt="BMW"></div>
+                        <small class="text-muted d-block mt-2">BMW</small>
+                    </a>
+                    <a href="https://www.mercedes-benz.com.br" target="_blank" class="text-center marca-link">
+                        <div class="marca-bola"><img src="logo_marcas/mercedes.png" alt="Mercedes"></div>
+                        <small class="text-muted d-block mt-2">Mercedes</small>
+                    </a>
+                    <a href="https://www.audi.com.br" target="_blank" class="text-center marca-link">
+                        <div class="marca-bola"><img src="logo_marcas/audi.png" alt="Audi"></div>
+                        <small class="text-muted d-block mt-2">Audi</small>
+                    </a>
+                    <a href="https://www.porsche.com/brazil/pt/" target="_blank" class="text-center marca-link">
+                        <div class="marca-bola"><img src="logo_marcas/porsche.png" alt="Porsche"></div>
+                        <small class="text-muted d-block mt-2">Porsche</small>
+                    </a>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="d-flex justify-content-center gap-4">
+                    <a href="https://www.byd.com/br" target="_blank" class="text-center marca-link">
+                        <div class="marca-bola"><img src="logo_marcas/byd.png" alt="BYD"></div>
+                        <small class="text-muted d-block mt-2">BYD</small>
+                    </a>
+                    <a href="https://www.tesla.com" target="_blank" class="text-center marca-link">
+                        <div class="marca-bola"><img src="logo_marcas/tesla.png" alt="Tesla"></div>
+                        <small class="text-muted d-block mt-2">Tesla</small>
+                    </a>
+                    <a href="https://www.jeep.com.br" target="_blank" class="text-center marca-link">
+                        <div class="marca-bola"><img src="logo_marcas/jeep.png" alt="Jeep"></div>
+                        <small class="text-muted d-block mt-2">Jeep</small>
+                    </a>
+                    <a href="https://www.volvocars.com/br" target="_blank" class="text-center marca-link">
+                        <div class="marca-bola"><img src="logo_marcas/volvo.png" alt="Volvo"></div>
+                        <small class="text-muted d-block mt-2">Volvo</small>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carrosselMarcas" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carrosselMarcas" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+        </button>
+    </div>
+</div>
