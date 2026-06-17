@@ -16,7 +16,7 @@ include "inc-cabecalho.php";
 ?>
 <body class="bg-secondary">
     <?php include "inc-menu.php"; ?>
-    <main class="container">
+    <main class="container pt-3 mb-2">
         <h1>Editar Cliente: <?= $nome?></h1>
         <form method="post" action="cliente-salvar-atualizacao.php?id_cliente=<?= $id_cliente ?>">
             <div class="mb-2">
@@ -44,6 +44,6 @@ include "inc-cabecalho.php";
     </main>
 <?php
 mysqli_close($conexao);
-include "inc-rodape.php";
+include "inc-footer.php";
 ?>
 </body>
