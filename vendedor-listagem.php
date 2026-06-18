@@ -26,19 +26,24 @@ include "inc-menu.php"; // Adicionado ponto e vírgula que faltava
             <?php
             #abrir conexão
             include "inc-conexao.php";
+
            
             $sql = "select * from tb_cliente order by id_cliente, nome, cpf, email, telefone, senha";
+
+            
+            $sql = "select * from tb_vendedor order by id_vendedor, nome, cpf, email, telefone, senha";
+
             $resultado = mysqli_query($conexao, $sql);
  
             #listagem de clientes
             while($linha_resultado = mysqli_fetch_assoc($resultado)){
                 echo "<tr>";
-                echo "<td> {$linha_resultado['id_cliente']} </td>";
+                echo "<td> {$linha_resultado['id_vendedor']} </td>";
                 echo "<td> {$linha_resultado['nome']} </td>";
                 echo "<td> {$linha_resultado['telefone']} </td>";
                 echo "<td>";
-                echo " <a href='cliente-atualizar.php?id_cliente={$linha_resultado['id_cliente']}' class='btn btn-sm btn-warning'>Atualizar</a> ";
-                echo " <a href='cliente-excluir.php?id={$linha_resultado['id_cliente']}' class='btn btn-sm btn-danger'>Excluir</a> ";
+                echo " <a href='vendedor-atualizar.php?id_cliente={$linha_resultado['id_vendedor']}' class='btn btn-sm btn-warning'>Atualizar</a> ";
+                echo " <a href='vendedor-excluir.php?id={$linha_resultado['id_vendedor']}' class='btn btn-sm btn-danger'>Excluir</a> ";
                 echo "</td>";
                 echo "</tr>";
             }
