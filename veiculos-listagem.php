@@ -52,6 +52,7 @@ include "inc-menu.php"; // Adicionado ponto e vírgula que faltava
 
                 // Agrupando as ações na mesma coluna <td> para organizar a tabela
                 echo "<td>";
+                echo " <a href='veiculos-visualizar.php?id_carro={$linha_resultado['id_carro']}' class='btn btn-sm btn-info text-white'>Visualizar</a> ";
                 echo " <a href='veiculos-atualizar.php?id_carro={$linha_resultado['id_carro']}' class='btn btn-sm btn-warning'>Atualizar</a> ";
                 echo " <a href='veiculos-excluir.php?id_carro={$linha_resultado['id_carro']}' class='btn btn-sm btn-danger'>Excluir</a> ";
                 echo "</td>";
