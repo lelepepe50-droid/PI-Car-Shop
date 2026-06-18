@@ -36,8 +36,9 @@ include "inc-menu.php"; // Adicionado ponto e vírgula que faltava
             #consultar os dados (Corrigido erro de digitação no comentário)
             $sql = "select * from tb_carro order by id_carro, marca, modelo, ano, quilometragem, placa, foto, cor, preco, status";
             $resultado = mysqli_query($conexao, $sql);
+ 
 
-            #listagem de clientes
+            #listagem de veiculos
             while($linha_resultado = mysqli_fetch_assoc($resultado)){
                 echo "<tr>";
                 echo "<td> {$linha_resultado['id_carro']} </td>";
@@ -53,7 +54,7 @@ include "inc-menu.php"; // Adicionado ponto e vírgula que faltava
                 // Agrupando as ações na mesma coluna <td> para organizar a tabela
                 echo "<td>";
                 echo " <a href='veiculos-atualizar.php?id_carro={$linha_resultado['id_carro']}' class='btn btn-sm btn-warning'>Atualizar</a> ";
-                echo " <a href='veiculos-excluir.php?id={$linha_resultado['id_carro']}' class='btn btn-sm btn-danger'>Excluir</a> ";
+                echo " <a href='veiculos-excluir.php?id_carro={$linha_resultado['id_carro']}' class='btn btn-sm btn-danger'>Excluir</a> ";
                 echo "</td>";
                 echo "</tr>";
             }

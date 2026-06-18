@@ -1,19 +1,19 @@
-<?php 
+<?php
 $titulo_da_pagina = "Listagem de vendedor";
 include "inc-cabecalho.php";
 include "inc-menu.php"; // Adicionado ponto e vírgula que faltava
 ?>
-
+ 
 <body class="d-flex flex-column min-vh-100 bg-secondary">
-    <main class="container">
+    <main class="container pt-3 mb-2">
         <h1>listagem de vendedor</h1>
         <div class="row">
          <div class="col">
             <!-- Corrigido o link que estava incompleto e sem fechar a tag <a> -->
             <a href="vendedor-cadastrar.php" class="btn btn-primary mb-3">Cadastrar Novo vendedor</a>
-         </div>   
+         </div>  
         </div>
-
+ 
         <div class="row">
         <div class="col">
         <table class="table table-success table-striped">
@@ -26,10 +26,10 @@ include "inc-menu.php"; // Adicionado ponto e vírgula que faltava
             <?php
             #abrir conexão
             include "inc-conexao.php";
-            
+           
             $sql = "select * from tb_cliente order by id_cliente, nome, cpf, email, telefone, senha";
             $resultado = mysqli_query($conexao, $sql);
-
+ 
             #listagem de clientes
             while($linha_resultado = mysqli_fetch_assoc($resultado)){
                 echo "<tr>";

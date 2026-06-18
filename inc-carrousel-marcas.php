@@ -48,19 +48,19 @@
 
             <div class="carousel-item">
                 <div class="d-flex justify-content-center gap-4">
-                    <a href="#" target="_blank" class="text-center marca-link">
+                    <a href="https://www.ram.com.br/" target="_blank" class="text-center marca-link">
                         <div class="marca-bola"><img src="logo-marca/logo dodge RAM.png" alt="RAM"></div>
                         <small class="text-muted d-block mt-2">RAM</small>
                     </a>
-                    <a href="#" target="_blank" class="text-center marca-link">
+                    <a href="https://corvettestore.com/" target="_blank" class="text-center marca-link">
                         <div class="marca-bola"><img src="logo-marca/logo corvette.jpg" alt="Corvette"></div>
                         <small class="text-muted d-block mt-2">Corvette</small>
                     </a>
-                    <a href="#" target="_blank" class="text-center marca-link">
+                    <a href="https://www.chrysler.com.br/" target="_blank" class="text-center marca-link">
                         <div class="marca-bola"><img src="logo-marca/logo chryler.png" alt="Chrysler"></div>
                         <small class="text-muted d-block mt-2">Chrysler</small>
                     </a>
-                    <a href="#" target="_blank" class="text-center marca-link">
+                    <a href="https://www.alfaromeo.pt/" target="_blank" class="text-center marca-link">
                         <div class="marca-bola"><img src="logo-marca/logo alfa romeo.jpg" alt="Alfa Romeo"></div>
                         <small class="text-muted d-block mt-2">Alfa Romeo</small>
                     </a>
@@ -94,7 +94,7 @@
                         <div class="marca-bola"><img src="logo-marca/logo bmw.jpg" alt="BMW"></div>
                         <small class="text-muted d-block mt-2">BMW</small>
                     </a>
-                    <a href="https://www.mercedes-benz.com.br" target="_blank" class="text-center marca-link">
+                    <a href="https://www2.mercedes-benz.com.br/" target="_blank" class="text-center marca-link">
                         <div class="marca-bola"><img src="logo-marca/logo Mercendes.jpg" alt="Mercedes"></div>
                         <small class="text-muted d-block mt-2">Mercedes</small>
                     </a>
