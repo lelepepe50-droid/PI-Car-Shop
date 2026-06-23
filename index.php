@@ -7,9 +7,9 @@ include "inc-cabecalho.php"
   <main>
     <?php include "inc-menu.php" ?>
     
-    <?php include "inc-historia-das-marcas.php" ?>
-
     <?php include "inc-carrousel-marcas.php" ?>
+
+    <?php include "inc-historia-das-marcas.php"?>
 
   </main>
   <?php include "inc-footer.php" ?>
