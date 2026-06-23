@@ -52,7 +52,7 @@
 <div class="row g-3">
         <div class="col-3">
             <div class="card h-100">
-                <img src="/img/img/HB20.jpg" class="card-img-top" alt="hb20">
+                <img src="/img/img/hb20.jpg" class="card-img-top" alt="hb20">
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title">hyundai</h5>
                     <p class="card-text">A trajetória da Hyundai no Brasil é marcada pelo sucesso do modelo HB20, lançado em 2012 junto com a inauguração da fábrica em Piracicaba (SP). A marca consolidou-se no país focando em produtos sob medida e, em 2025, assumiu controle total de sua operação após o fim da parceria histórica com o Grupo CAOA.</p>
