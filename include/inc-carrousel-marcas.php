@@ -69,19 +69,19 @@
 
             <div class="carousel-item">
                 <div class="d-flex justify-content-center gap-4">
-                    <a href="https://caoachery.com.br" target="_blank" class="text-center marca-link">
+                    <a href="https://caoachery.com.br/" target="_blank" class="text-center marca-link">
                         <div class="marca-bola"><img src="logo-marca/logo caoa chery.jpg" alt="Caoa Chery"></div>
                         <small class="text-muted d-block mt-2">Caoa Chery</small>
                     </a>
-                    <a href="https://www.jacmotorsbrasil.com.br" target="_blank" class="text-center marca-link">
+                    <a href="https://www.jacmotors.com.br/carros/?srsltid=AfmBOoqkeveDEjjowgcfpR5S2azkkmIRU8d5cPZLepTozdaCxVQPVeE" target="_blank" class="text-center marca-link">
                         <div class="marca-bola"><img src="logo-marca/logo JAC.jpg" alt="JAC Motors"></div>
                         <small class="text-muted d-block mt-2">JAC Motors</small>
                     </a>
-                    <a href="#" target="_blank" class="text-center marca-link">
+                    <a href="https://www.mazda.pt/" target="_blank" class="text-center marca-link">
                         <div class="marca-bola"><img src="logo-marca/logo Mazda.jpg" alt="Mazda"></div>
                         <small class="text-muted d-block mt-2">Mazda</small>
                     </a>
-                    <a href="#" target="_blank" class="text-center marca-link">
+                    <a href="https://www.isuzu.co.jp/world/" target="_blank" class="text-center marca-link">
                         <div class="marca-bola"><img src="logo-marca/logo isuzu.png" alt="Isuzu"></div>
                         <small class="text-muted d-block mt-2">Isuzu</small>
                     </a>
