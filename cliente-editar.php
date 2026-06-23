@@ -12,7 +12,7 @@ while($linha = mysqli_fetch_assoc($resultado)){
     $senha = $linha['senha'];
 }
 $titulo_da_pagina = "Editar cliente";
-include "inc-cabecalho.php";
+include "include/inc-cabecalho.php";
 ?>
 <body class="bg-secondary">
     <?php include "inc-menu.php"; ?>
@@ -40,6 +40,6 @@ include "inc-cabecalho.php";
     </main>
 <?php
 mysqli_close($conexao);
-include "inc-footer.php";
+include "include/inc-footer.php";
 ?>
 </body>

@@ -12,10 +12,10 @@ while($linha = mysqli_fetch_assoc($resultado)){
     $senha = $linha['senha'];
 }
 $titulo_da_pagina = "Editar vendedor";
-include "inc-cabecalho.php";
+include "include/inc-cabecalho.php";
 ?>
 <body class="bg-secondary">
-    <?php include "inc-menu.php"; ?>
+    <?php include "include/inc-menu.php"; ?>
     <main class="container pt-3 mb-2">
         <h1>Editar Cliente: <?= $nome?></h1>
         <form method="post" action="vendedor-salvar-atualizacao.phpid_vendedor=<?= $id_vendedor ?>">
@@ -40,6 +40,6 @@ include "inc-cabecalho.php";
     </main>
 <?php
 mysqli_close($conexao);
-include "inc-footer.php";
+include "include/inc-footer.php";
 ?>
 </body>

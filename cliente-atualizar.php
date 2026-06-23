@@ -36,10 +36,10 @@ if($linha = mysqli_fetch_assoc($resultado)){
 }
 
 $titulo_da_pagina = "Atualizar Cliente";
-include "inc-cabecalho.php";
+include "include/inc-cabecalho.php";
 ?>
 <body>
-    <?php include "inc-menu.php"; ?>
+    <?php include "include/inc-menu.php"; ?>
     <main class="container mt-4 pt-3 mb-2">
         <h1>Atualizar Cliente: <?= htmlspecialchars($nome) ?></h1>
         
@@ -76,6 +76,6 @@ include "inc-cabecalho.php";
     </main>
 <?php
 mysqli_close($conexao);
-include "inc-footer.php";
+include "include/inc-footer.php";
 ?>
 </body>
