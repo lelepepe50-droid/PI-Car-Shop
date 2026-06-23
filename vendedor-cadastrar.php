@@ -1,11 +1,11 @@
 <?php 
 $titulo_da_pagina = "Cadastrar Vendedor";
-include "inc-cabecalho.php"
+include "include/inc-cabecalho.php"
 ?>
 
 <body class="d-flex flex-column min-vh-100 bg-secondary">
 
-  <?php include "inc-menu.php" ?>
+  <?php include "include/inc-menu.php" ?>
 
   <main class="container my-9">
     <div class="row justify-content-center">
@@ -97,7 +97,7 @@ include "inc-cabecalho.php"
     </div>
   </main>
 
-  <?php include "inc-footer.php"?>
+  <?php include "include/inc-footer.php"?>
 
 </body>
 

@@ -1,31 +1,31 @@
 <?php
-$titulo_da_pagina = "Vedendor Visualizar";
-include "inc-cabecalho.php";
+$titulo_da_pagina = "Vendedor Visualizar"; // Corrigido erro de digitação no título
+include "include/inc-cabecalho.php";
 include "inc-conexao.php";
 
-// 1. SEGURANÇA: Garante que o ID seja um número inteiro, evitando SQL Injection
+// 1. SEGURANÇA: Garante que o ID seja um número inteiro
 $id_vendedor = isset($_GET['id_vendedor']) ? (int)$_GET['id_vendedor'] : 0;
 
 $nome = $cpf = $email = $telefone = "";
 
-if ($id_cliente > 0) {
-    // 2. BOAS PRÁTICAS: Usando Prepared Statements para proteger o banco de dados
-    $sql = "SELECT nome, cpf, email, telefone FROM tb_cliente WHERE id_vendedor = ?";
+if ($id_vendedor > 0) {
+    // 2. CORREÇÃO: Buscando os dados da tabela correta de vendedores
+    $sql = "SELECT nome, cpf, email, telefone FROM tb_vendedor WHERE id_vendedor = ?";
     $stmt = mysqli_prepare($conexao, $sql);
     
     if ($stmt) {
-        mysqli_stmt_bind_param($stmt, "i", $id_cliente);
+        // CORREÇÃO: Trocado $id_cliente por $id_vendedor
+        mysqli_stmt_bind_param($stmt, "i", $id_vendedor);
         mysqli_stmt_execute($stmt);
         $resultado = mysqli_stmt_get_result($stmt);
         
-        // Como o ID é único, não precisamos de um laço 'while', apenas um 'if' basta
         if ($linha = mysqli_fetch_assoc($resultado)) {
-            $nome     = htmlspecialchars($linha['nome']); // Evita ataques XSS ao exibir na tela
+            $nome     = htmlspecialchars($linha['nome']); 
             $cpf      = htmlspecialchars($linha['cpf']);
             $email    = htmlspecialchars($linha['email']); 
             $telefone = htmlspecialchars($linha['telefone']);
         } else {
-            echo "<script>alert('Cliente não encontrado.'); window.location='vendedor-listagem.php';</script>";
+            echo "<script>alert('Vendedor não encontrado.'); window.location='vendedor-listagem.php';</script>";
             exit;
         }
         mysqli_stmt_close($stmt);
@@ -36,12 +36,12 @@ if ($id_cliente > 0) {
 }
 ?>
 <body>
-    <?php include "inc-menu.php";?>
+    <?php include "include/inc-menu.php";?>
     
     <main class="container mt-5">
         <div class="d-flex justify-content-between align-items-center mb-4 pb-2 border-bottom">
-            <h1 class="h2 text-dark m-0">Visualizar Detalhes do vendedor</h1>
-            <a href="cliente-listagem.php" class="btn btn-outline-secondary btn-sm">
+            <h1 class="h2 text-dark m-0">Visualizar Detalhes do Vendedor</h1>
+            <a href="vendedor-listagem.php" class="btn btn-outline-secondary btn-sm">
                 <i class="bi bi-arrow-left"></i> Voltar para a lista
             </a>
         </div>
@@ -80,7 +80,7 @@ if ($id_cliente > 0) {
                         </div>
                     </div>
                     <div class="card-footer bg-light d-flex justify-content-end gap-2 py-3">
-                        <a href="vendedor-editar.php?id_vendedor=<?=id_vendedor;?>" class="btn btn-warning px-4">
+                        <a href="vendedor-editar.php?id_vendedor=<?=$id_vendedor;?>" class="btn btn-warning px-4">
                             <i class="bi bi-pencil-square me-1"></i> Editar Dados
                         </a>
                     </div>
@@ -91,6 +91,6 @@ if ($id_cliente > 0) {
 
 <?php 
 mysqli_close($conexao);
-include "inc-footer.php";
+include "include/inc-footer.php";
 ?>
 </body>

@@ -1,7 +1,7 @@
 <?php 
 $titulo_da_pagina = "Listagem de Cliente";
-include "inc-cabecalho.php";
-include "inc-menu.php";
+include "include/inc-cabecalho.php";
+include "include/inc-menu.php";
 ?>
 
 <body class="d-flex flex-column min-vh-100 bg-secondary">
@@ -50,5 +50,5 @@ include "inc-menu.php";
             </div>    
         </div>
     </main>
-    <?php include "inc-footer.php"?>
+    <?php include "include/inc-footer.php"?>
 </body>

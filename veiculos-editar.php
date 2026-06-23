@@ -15,10 +15,10 @@ while($linha = mysqli_fetch_assoc($resultado)){
     $preco = $linha['preco'];
 }
 $titulo_da_pagina = "Editar carrro";
-include "inc-cabecalho.php";
+include "include/inc-cabecalho.php";
 ?>
 <body class="bg-secondary">
-    <?php include "inc-menu.php"; ?>
+    <?php include "include/inc-menu.php"; ?>
     <main class="container pt-3 mb-2">
         <h1>Editar Cliente: <?= $marca?></h1>
         <form method="post" action="veiculos-salvar-atualizacao.php?id_carro=<?= $id_carro ?>">
@@ -59,6 +59,6 @@ include "inc-cabecalho.php";
     </main>
 <?php
 mysqli_close($conexao);
-include "inc-footer.php";
+include "include/inc-footer.php";
 ?>
 </body>

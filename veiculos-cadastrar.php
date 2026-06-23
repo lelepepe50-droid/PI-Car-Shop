@@ -1,12 +1,12 @@
 <?php 
 $titulo_da_pagina = "Cadastrar veiculos";
-include "inc-cabecalho.php"
+include "include/inc-cabecalho.php"
 ?>
 
 <body class="d-flex flex-column min-vh-100 bg-secondary">
 
   
-    <?php include "inc-menu.php" ?>
+    <?php include "include/inc-menu.php" ?>
 
     <main class="container mt-4 flex-shrink-0 p-2">
         

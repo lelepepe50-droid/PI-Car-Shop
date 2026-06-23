@@ -1,7 +1,7 @@
 <?php
 $titulo_da_pagina = "Listagem de vendedor";
-include "inc-cabecalho.php";
-include "inc-menu.php"; // Adicionado ponto e vírgula que faltava
+include "include/inc-cabecalho.php";
+include "include/inc-menu.php"; // Adicionado ponto e vírgula que faltava
 ?>
  
 <body class="d-flex flex-column min-vh-100 bg-secondary">
@@ -54,5 +54,5 @@ include "inc-menu.php"; // Adicionado ponto e vírgula que faltava
             </div>    
         </div>
     </main>
-    <?php include "inc-footer.php"?>
+    <?php include "include/inc-footer.php"?>
 </body>

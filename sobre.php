@@ -1,11 +1,11 @@
 <?php
 $titulo_da_pagina = "Sobre Nós - Nossa História";
-include "inc-cabecalho.php";
+include "include/inc-cabecalho.php";
 ?>
 
 <body class="d-flex flex-column min-vh-100 bg-light">
 
-  <?php include "inc-menu.php" ?>
+  <?php include "include/inc-menu.php" ?>
 
   <header class="hero-section text-white text-center">
     <div class="container">
@@ -82,7 +82,7 @@ include "inc-cabecalho.php";
 
   </main>
 
-  <?php include "inc-footer.php" ?>
+  <?php include "include/inc-footer.php" ?>
 </body>
 
 </html>

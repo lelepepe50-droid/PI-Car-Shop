@@ -1,6 +1,6 @@
 <?php
 $titulo_da_pagina = "Cliente Visualizar";
-include "inc-cabecalho.php";
+include "include/inc-cabecalho.php";
 include "inc-conexao.php";
 
 // 1. SEGURANÇA: Garante que o ID seja um número inteiro, evitando SQL Injection
@@ -36,7 +36,7 @@ if ($id_cliente > 0) {
 }
 ?>
 <body>
-    <?php include "inc-menu.php";?>
+    <?php include "include/inc-menu.php";?>
     
     <main class="container mt-5">
         <div class="d-flex justify-content-between align-items-center mb-4 pb-2 border-bottom">
@@ -91,6 +91,6 @@ if ($id_cliente > 0) {
 
 <?php 
 mysqli_close($conexao);
-include "inc-footer.php";
+include "include/inc-footer.php";
 ?>
 </body>

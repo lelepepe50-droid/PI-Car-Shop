@@ -34,7 +34,7 @@ CREATE TABLE `tb_carro` (
   `preco` decimal(10,0) NOT NULL,
   `status` varchar(30) NOT NULL DEFAULT 'disponivel',
   PRIMARY KEY (`id_carro`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -43,7 +43,7 @@ CREATE TABLE `tb_carro` (
 
 LOCK TABLES `tb_carro` WRITE;
 /*!40000 ALTER TABLE `tb_carro` DISABLE KEYS */;
-INSERT INTO `tb_carro` VALUES (1,'BVdZ24FG','DASASAS','SASAS',2009,'Prata',140000,'https://s3.ecompletocarros.dev/images/lojas/141/veiculos/46143/veiculoInfoVeiculoImagesMobile/vehicle_image_1606831801_52aa97c1be82b0c914c9a43ff9f0c1fd.jpeg',32000,'disponivel');
+INSERT INTO `tb_carro` VALUES (2,'SADAnKx2','dasdadasd','dsasdsa',2002,'vermelho',100000,'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhUTExMVFRUXGBUYFxgYGBcYGBgYGRYXFxcYGBgdHSggGRolHRcXITEhJSkrLi4uGB8zODMsNygtLisBCgoKDg0OGxAQGyslHyUrLS8tLi0tLS0tLS0tLS0tLS0tLS0vLS0vLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIALABHgMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAEAQIDBQYABwj/xABIEAABAwIDBQUDBwoFAwUBAAABAgMRACEEEjEFQVFhgQYTInGRMqGxFEJSwdHh8AcVI1NygpKissIzQ2LS8WRzk1Rjg8TiNP/EABoBAAMBAQEBAAAAAAAAAAAAAAABAgMEBQb/xAA0EQACAgECBAMGBQMFAAAAAAAAAQIRAwQhEhMxQQVRkRQiMmGBoVJxscHRQ1PhFRYjM0L/2gAMAwEAAhEDEQA/APNsJhYjxgSJvm1Gg3A+dEZUpgZlFSuAAHlfXzoV8uKEqEC2s9AJt0FEssEoKijNNgd44wBeK5pvu2BArBmCStKRrAMn3WpWXmkwJcJ1KgYHKBNDONjLNhuA1NuJpO9GWAi8XNXw2txFoMek6lQ1ByyfUG0VW4p8FVvUTfnTWFFMECfrrnmTGe+t7QAeVOMFF7DuwY11cBwpda1GaHsttfE4ZY7oryLMqSkBWYJsSBx3elXvabHOuYolTakhRhJUAEqAACsiiAIknXS9Y3C4wtAQkZkqzIXfMlUjoR4ffRrm21vqJfUFHKQFKBkehvPFUmocbdjUtqJ3VuIUVFpXiSpMqTIKFEoQUmJ1kZt+g5wO4UKaU6YQkqSkJXAWdQS2BE5coBtv5XL2ZlWSp57IhKSopClZlAg5SkagBSwcx4njVZ8pGTxAwSc0G5O6eG/1NUIR7FuHwGBlKiVAAGCZiQLCTw30Vj9tL',35000,'disponivel');
 /*!40000 ALTER TABLE `tb_carro` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -61,8 +61,9 @@ CREATE TABLE `tb_cliente` (
   `email` varchar(100) NOT NULL,
   `telefone` varchar(20) NOT NULL,
   `senha` varchar(225) NOT NULL,
+  `foto` varchar(1000) NOT NULL,
   PRIMARY KEY (`id_cliente`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -71,7 +72,7 @@ CREATE TABLE `tb_cliente` (
 
 LOCK TABLES `tb_cliente` WRITE;
 /*!40000 ALTER TABLE `tb_cliente` DISABLE KEYS */;
-INSERT INTO `tb_cliente` VALUES (1,'dsadsadsadsasdadad','000.000.000-55','dsadssdasdasda@gmail.com','(11) 99999-9999','dssdasdsasda'),(2,'','','','','');
+INSERT INTO `tb_cliente` VALUES (1,'dsadsadsadsasdadad','000.000.000-55','dsadssdasdasda@gmail.com','(11) 99999-9999','dssdasdsasda','');
 /*!40000 ALTER TABLE `tb_cliente` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -89,8 +90,12 @@ CREATE TABLE `tb_vendedor` (
   `email` varchar(100) NOT NULL,
   `telefone` varchar(20) NOT NULL,
   `senha` varchar(225) NOT NULL,
+  `foto` varchar(1000) NOT NULL,
+  `nome_da_loja` varchar(250) NOT NULL,
+  `endereco` varchar(250) NOT NULL,
+  `foto_da_loja` varchar(1000) NOT NULL,
   PRIMARY KEY (`id_vendedor`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -99,6 +104,7 @@ CREATE TABLE `tb_vendedor` (
 
 LOCK TABLES `tb_vendedor` WRITE;
 /*!40000 ALTER TABLE `tb_vendedor` DISABLE KEYS */;
+INSERT INTO `tb_vendedor` VALUES (1,'asdsdasasad','000.000.000-55','asdASaSA@gmail.com','(11) 88888-8888','asdsadsad','','','','');
 /*!40000 ALTER TABLE `tb_vendedor` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -115,4 +121,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-06-16 19:34:20
+-- Dump completed on 2026-06-22 19:33:30
