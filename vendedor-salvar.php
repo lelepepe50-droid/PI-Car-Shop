@@ -4,6 +4,10 @@ $cpf = $_POST['cpf'];
 $email = $_POST['email'];
 $telefone = $_POST['telefone'];
 $senha = $_POST['senha'];
+$senha = $_POST['senha'];
+$nome_da_loja = $_POST['nome da loja'];
+$endereco = $_POST['endereco'];
+$foto = $_POST['foto'];
 
 $conexao = mysqli_connect("localhost", "root", "", "db_carros_projeto_integrador");
 if(!$conexao){
@@ -12,7 +16,7 @@ if(!$conexao){
 }
 
 // Correção: tb_vendedor e VALUES
-$sql = "INSERT INTO tb_vendedor(nome, cpf, email, telefone, senha) VALUES ('$nome', '$cpf', '$email', '$telefone', '$senha')";
+$sql = "INSERT INTO tb_vendedor(nome, cpf, email, telefone, senha) VALUES ('$nome', '$cpf', '$email', '$telefone', '$senha', '$nome_da_loja', '$endereco', '$foto')";
 
 $resultado = mysqli_query($conexao, $sql);
 

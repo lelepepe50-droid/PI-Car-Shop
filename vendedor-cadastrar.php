@@ -64,14 +64,14 @@ include "include/inc-cabecalho.php"
              <!-- endreço da loja -->
               <div class="col-md-6 mb-3">
                 <label for="telefone" class="form-label text-secondary">endereço da loja</label>
-                <input type="text" id="foto" name="foto" class="form-control" placeholder="digite o endereço" maxlength="15" required>
+                <input type="text" id="endereco" name="endereco" class="form-control" placeholder="digite o endereço" maxlength="15" required>
               </div>
             
 
              <!-- foto da loja -->
               <div class="col-md-6 mb-3">
                 <label for="telefone" class="form-label text-secondary">foto da loja</label>
-                <input type="text" id="endereco" name="endereco" class="form-control" placeholder="tirar uma foto" maxlength="15" required>
+                <input type="text" id="foto" name="foto" class="form-control" placeholder="tirar uma foto" maxlength="15" required>
               </div>
             
 

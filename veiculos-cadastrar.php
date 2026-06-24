@@ -94,7 +94,8 @@ include "include/inc-cabecalho.php"
         </div>
     </main>
 
-    <?php include "inc-footer.php"?>
+  <?php include "include/inc-footer.php"?>
+
 
 </body>
 </html>

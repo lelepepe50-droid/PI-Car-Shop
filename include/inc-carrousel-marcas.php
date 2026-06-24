@@ -52,7 +52,7 @@
                         <div class="marca-bola"><img src="logo-marca/logo dodge RAM.png" alt="RAM"></div>
                         <small class="text-muted d-block mt-2">RAM</small>
                     </a>
-                    <a href="https://corvettestore.com/" target="_blank" class="text-center marca-link">
+                    <a href="https://corvettestore.com/?srsltid=AfmBOorg1QmPg73MinIBisIl6Dq_ozmVAbsayNuKNesyVYEN2bQtPA8f" target="_blank" class="text-center marca-link">
                         <div class="marca-bola"><img src="logo-marca/logo corvette.jpg" alt="Corvette"></div>
                         <small class="text-muted d-block mt-2">Corvette</small>
                     </a>

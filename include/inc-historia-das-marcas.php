@@ -1,5 +1,5 @@
 <div class="container text-center pt-3 mb-2">
-    <h3 class="mb-4">História das marcas de carros</h3>
+    <h3 class="mb-4">História das marcas de carros luxo</h3>
     <div class="row g-3">
         <div class="col-3">
             <div class="card h-100">
@@ -49,6 +49,7 @@
 </div>
 
 <div class="container text-center pt-3 mb-2">
+<h3 class="mb-4">historia da marca de carro no Brasil</h3>
 <div class="row g-3">
         <div class="col-3">
             <div class="card h-100">
@@ -64,7 +65,7 @@
  
         <div class="col-3">
             <div class="card h-100">
-                <img src="/img/img/corolla.jpg" class="card-img-top" alt="corolla">
+                <img src="/img/img/Corolla.jpg" class="card-img-top" alt="corolla">
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title">toyota</h5>
                     <p class="card-text">A Toyota chegou ao Brasil em 1958, em São Paulo, marcando a primeira fábrica da marca fora do Japão. Consolidada pela confiabilidade e expansão de suas fábricas, a montadora hoje é um pilar da indústria automotiva nacional, produzindo modelos icônicos como o Corolla e a Hilux, além de liderar a eletrificação com carros híbridos flex.</p>
@@ -75,7 +76,7 @@
  
         <div class="col-3">
             <div class="card h-100">
-                <img src="/img/img/Civic.jpg" class="card-img-top" alt="">
+                <img src="/img/img/civic.jpg" class="card-img-top" alt="">
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title">Honda</h5>
                     <p class="card-text">A história da Honda no Brasil começou em 1971 como importadora em São Paulo. A virada para a fabricação nacional ocorreu em 1976 com a inauguração da fábrica de motos em Manaus. A marca expandiu para os carros em 1997 com a unidade de Sumaré, transferida posteriormente para Itirapina (SP).</p>
@@ -86,7 +87,7 @@
  
         <div class="col-3">
             <div class="card h-100">
-                <img src="/img/img/clio.jpg" class="card-img-top" alt="clio">
+                <img src="/img/img/clio sedan.webp" class="card-img-top" alt="clio">
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title">renault</h5>
                     <p class="card-text">A história da Renault no Brasil iniciou-se na década de 1960 em parceria com a Willys-Overland, mas a operação nacional consolidou-se em dezembro de 1998 com a inauguração do Complexo Industrial Ayrton Senna, no Paraná. A marca superou a marca de 4 milhões de veículos produzidos, destacando-se por modelos como Clio, Scénic e, mais recentemente, o Kardian.</p>
