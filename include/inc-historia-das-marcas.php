@@ -87,7 +87,7 @@
  
         <div class="col-3">
             <div class="card h-100">
-                <img src="/img/img/clio sedan.webp" class="card-img-top" alt="clio">
+                <img src="/img/img/logan.jpg" class="card-img-top" alt="logan">
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title">renault</h5>
                     <p class="card-text">A história da Renault no Brasil iniciou-se na década de 1960 em parceria com a Willys-Overland, mas a operação nacional consolidou-se em dezembro de 1998 com a inauguração do Complexo Industrial Ayrton Senna, no Paraná. A marca superou a marca de 4 milhões de veículos produzidos, destacando-se por modelos como Clio, Scénic e, mais recentemente, o Kardian.</p>
