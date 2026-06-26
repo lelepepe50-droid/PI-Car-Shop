@@ -1,12 +1,15 @@
-<div class="row g-3">
-        <div class="col-3">
-            <div class="card h-100">
-                <img src="<?=$foto;?>" class="card-img-top img-card-carro-fluid" alt="foto dos carros:<?=$modelofusca?>">
-                <div class="card-body d-flex flex-column">
-                    <h5 class="card-title"></h5>
-                    <p> class="card-text"</p>
+<body>
+    <?php include "inc-menu.php";?>
+    <main class="container mt-5">
+        <h1>Visualizar Discografia </h1>
+    <div class= "letra-cor">
+       <img src="<?=$foto; ?>" alt="<?=$album; ?>" class= "capa-album" > <br>
+        Artista:    <?=$artista; ?> <br>
+        Nome do álbum:   <?=$album; ?> <br>
+        Ano de lançamento: <?=$ano; ?>    <br>
+        Tipo:   <?=$tipo; ?> <br>
+    </div>
+    </main>
  
-                    <a class="btn btn-primary mt-auto"></a>
-                </div>
-            </div>
-        </div>
+    <?php include "inc-rodape.php"?>
+</body>
