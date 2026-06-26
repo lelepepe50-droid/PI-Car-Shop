@@ -15,23 +15,17 @@
 
       <!-- Coluna Central: Navegação Principal -->
       <div class="col-6 col-md-4 text-center text-md-start">
+      </div>
+
+      <!-- Coluna Direita: Gerenciamento -->
+      <div class="col-6 col-md-4 text-center text-md-start">
         <h6 class="text-uppercase fw-bold mb-3 text-white-50 small">Navegação</h6>
         <ul class="nav flex-column gap-2">
           <li><a href="index.php" class="nav-link p-0 link-light opacity-75">Home</a></li>
           <li><a href="sobre.php" class="nav-link p-0 link-light opacity-75">Sobre</a></li>
           <li><a href="vendedor-cadastrar.php" class="nav-link p-0 link-light opacity-75">Loja e Particular</a></li>
           <li><a href="cliente-cadastrar.php" class="nav-link p-0 link-light opacity-75">Pessoas</a></li>
-        </ul>
-      </div>
-
-      <!-- Coluna Direita: Gerenciamento -->
-      <div class="col-6 col-md-4 text-center text-md-start">
-        <h6 class="text-uppercase fw-bold mb-3 text-white-50 small">Gerenciamento</h6>
-        <ul class="nav flex-column gap-2">
           <li><a href="veiculos-cadastrar.php" class="nav-link p-0 link-light opacity-75">Cadastrar Veículos</a></li>
-          <li><a href="veiculos-listagem.php" class="nav-link p-0 link-light opacity-75">Lista Veículos</a></li>
-          <li><a href="cliente-listagem.php" class="nav-link p-0 link-light opacity-75">Lista Cliente</a></li>
-          <li><a href="vendedor-listagem.php" class="nav-link p-0 link-light opacity-75">Lista Vendedor</a></li>
         </ul>
       </div>
 
