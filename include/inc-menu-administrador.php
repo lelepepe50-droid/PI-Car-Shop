@@ -10,7 +10,7 @@
         
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav me-auto">
-                <a class="nav-link" href="/PI-Car-Shop/index.php">
+                <a class="nav-link" href="index.php">
                     <i class="bi bi-shop me-1"></i> Ver Vitrine
                 </a>
                 
@@ -22,12 +22,6 @@
                 </a>
                 <a class="nav-link" href="vendedor-listagem.php">
                     <i class="bi bi-person-badge-fill me-1"></i> Vendedores
-                </a>
-            </div>
-            
-            <div class="navbar-nav">
-                <a class="nav-link text-danger fw-bold" href="/PI-Car-Shop/admin/logout.php">
-                    <i class="bi bi-box-arrow-right me-1"></i> Sair do Sistema
                 </a>
             </div>
         </div>
