@@ -1,7 +1,6 @@
 
-<?php 
+<?php
 include "inc-conexao.php";
-
 // 1. Protege contra SQL Injection garantindo que o ID seja um número inteiro
 $id_carro = isset($_GET['id_carro']) ? (int)$_GET['id_carro'] : 0;
 
