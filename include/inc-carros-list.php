@@ -1,8 +1,23 @@
+<<<<<<< Updated upstream
 <?php
 include "inc-conexao.php";
 
 // CORREÇÃO 1: Protege contra SQL Injection garantindo que o ID seja um número inteiro
 $id_carro = isset($_GET['id_carro']) ? (int)$_GET['id_carro'] : 0;
+
+<body>
+    <?php include "inc-menu.php";?>
+    <main class="container mt-5">
+        <h1>Visualizar Discografia </h1>
+    <div class= "letra-cor">
+       <img src="<?=$marca; ?>" alt="<?=$modelo; ?>"  class= "capa-carro" > <br>
+        Artista:    <?=$artista; ?> <br>
+        Nome do álbum:   <?=$album; ?> <br>
+        Ano de lançamento: <?=$ano; ?>    <br>
+        Tipo:   <?=$tipo; ?> <br>
+    </div>
+    </main>
+
  
 $sql = "select * from tb_carro where id_carro = $id_carro";
 $resultado = mysqli_query($conexao, $sql);
