@@ -18,7 +18,7 @@ include "include/inc-cabecalho.php"
           </h1>
 
           <!-- Formulário configurado para enviar os dados via POST -->
-          <form action="cliente-salvar.php" method="POST">
+          <form action="veiculos-salvar.php" method="POST">
 
             <div class="row">
               <!-- 1. Marca -->
