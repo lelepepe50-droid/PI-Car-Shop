@@ -1,7 +1,7 @@
 <?php
 $id_carro = $_GET['id_carro'];
 include "inc-conexao.php";
-$sql = "select * from tb_cliente where id_carro = {$id_carro} ";
+$sql = "select * from tb_carro where id_carro = {$id_carro} ";
 $resultado = mysqli_query($conexao, $sql);
 $marca = $modelo = $ano = $quilometragem = $placa = $foto = $cor = $preco = "";
 while($linha = mysqli_fetch_assoc($resultado)){
@@ -20,7 +20,7 @@ include "include/inc-cabecalho.php";
 <body class="bg-secondary">
     <?php include "include/inc-menu.php"; ?>
     <main class="container pt-3 mb-2">
-        <h1>Editar Cliente: <?= $marca?></h1>
+        <h1>Editar veiculos: <?= $marca?></h1>
         <form method="post" action="veiculos-salvar-atualizacao.php?id_carro=<?= $id_carro ?>">
             <div class="mb-2">
                 <label class="form-label">marca:</label>

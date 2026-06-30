@@ -11,77 +11,38 @@ include "include/inc-cabecalho.php"
     
     <?php include "include/inc-historia-das-marcas.php" ?>
 
-    <?php include "include/inc-carros-list.php" ?>
+    <h1 class="text-center fs-3 mt-4 mb-4 text-uppercase fw-bold">Carros Disponíveis</h1>
 
-    <div class="container">
-    <br>
-    <h4>Bootstrap 4 and CCS3 Product Cards with Transition - Techhowdy(demonguru18) - Lyoid Lopes</h2>
-	<br>
-	<div class="row" id="ads">
-    <!-- Category Card -->
-    <div class="col-md-4">
-        <div class="card rounded">
-            <div class="card-image">
-                <span class="card-notify-badge">Low KMS</span>
-                <span class="card-notify-year">2018</span>
-                <img class="img-fluid" src="https://imageonthefly.autodatadirect.com/images/?USER=eDealer&PW=edealer872&IMG=USC80HOC011A021001.jpg&width=440&height=262" alt="Alternate Text" />
-            </div>
-            <div class="card-image-overlay m-auto">
-                <span class="card-detail-badge">Used</span>
-                <span class="card-detail-badge">$28,000.00</span>
-                <span class="card-detail-badge">13000 Kms</span>
-            </div>
-            <div class="card-body text-center">
-                <div class="ad-title m-auto">
-                    <h5>Honda Accord LX</h5>
+<div class="container">
+    <div class="row">
+        <?php 
+        include "inc-conexao.php";
+        $sql = "select * from tb_carro order by marca, ano";
+        $resultado = mysqli_query($conexao, $sql);
+        
+        while ($linha = mysqli_fetch_assoc($resultado)) { 
+        ?>
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="cartao">
+                    <img src="<?= $linha['foto']; ?>" alt="<?= $linha['modelo']; ?>" class="img-cartao">
+                    
+                    <div class="cor-cartao">
+                        <div class="texto-cartao p-3">
+                            <h1 class="fs-4 m-0"><?= mb_strtoupper($linha['marca']); ?></h1>
+                            <h2 class="fs-5 m-0"><?= $linha['modelo']; ?></h2>
+                            <h3 class="fs-6 mt-1 mb-2"><?= $linha['ano']; ?> — <?= $linha['cor']; ?></h3>
+                            
+                            <div class="fw-bold fs-5 text-warning">
+                                R$ <?= number_format($linha['preco'], 2, ',', '.'); ?>
+                            </div>
+                        </div>    
+                    </div>  
                 </div>
-                <a class="ad-btn" href="#">View</a>
             </div>
-        </div>
-    </div>
-    <div class="col-md-4">
-        <div class="card rounded">
-            <div class="card-image">
-                <span class="card-notify-badge">Fully-Loaded</span>
-                <span class="card-notify-year">2017</span>
-                <img class="img-fluid" src="https://imageonthefly.autodatadirect.com/images/?USER=eDealer&PW=edealer872&IMG=CAC80HOC021B121001.jpg&width=440&height=262" alt="Alternate Text" />
-            </div>
-            <div class="card-image-overlay m-auto">
-                <span class="card-detail-badge">Used</span>
-                <span class="card-detail-badge">$28,000.00</span>
-                <span class="card-detail-badge">13000 Kms</span>
-            </div>
-            <div class="card-body text-center">
-                <div class="ad-title m-auto">
-                    <h5>Honda CIVIC HATCHBACK LS</h5>
-                </div>
-                <a class="ad-btn" href="#">View</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-md-4">
-        <div class="card rounded">
-            <div class="card-image">
-                <span class="card-notify-badge">Price Reduced</span>
-                <span class="card-notify-year">2018</span>
-                <img class="img-fluid" src="https://imageonthefly.autodatadirect.com/images/?USER=eDealer&PW=edealer872&IMG=USC80HOC091A021001.jpg&width=440&height=262" alt="Alternate Text" />
-            </div>
-            <div class="card-image-overlay m-auto">
-                <span class="card-detail-badge">Used</span>
-                <span class="card-detail-badge">$22,000.00</span>
-                <span class="card-detail-badge">8000 Kms</span>
-            </div>
-            <div class="card-body text-center">
-                <div class="ad-title m-auto">
-                    <h5>Honda Accord Hybrid LT</h5>
-                </div>
-                <a class="ad-btn" href="#">View</a>
-            </div>
-        </div>
-    </div>
-
-</div>
+        <?php 
+        } 
+        ?>
+    </div>   
 </div>
 
   </main>
