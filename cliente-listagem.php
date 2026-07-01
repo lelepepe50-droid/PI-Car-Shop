@@ -1,10 +1,11 @@
 <?php 
 $titulo_da_pagina = "Listagem de Cliente";
 include "include/inc-cabecalho.php";
-include "include/inc-menu-administrador.php";
 ?>
 
 <body class="d-flex flex-column min-vh-100 bg-secondary">
+    <?php include "include/inc-menu-administrador.php"; ?>
+
     <main class="container pt-3 mb-2">
         <h1>listagem de cliente</h1>
         <div class="row">
@@ -52,3 +53,4 @@ include "include/inc-menu-administrador.php";
     </main>
     <?php include "include/inc-footer-administrador.php"?>
 </body>
+</html>

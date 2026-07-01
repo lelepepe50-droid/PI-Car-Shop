@@ -112,3 +112,347 @@
     color: #ffffff;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
 }
+
+.home-page {
+    background: #f5f7fb;
+    color: #111827;
+}
+
+.home-hero {
+    background-image: url("../img/img/Ford Mustang Shelby GT500 2024 Wallpapers.jpg");
+    background-position: center;
+    background-size: cover;
+    min-height: 680px;
+    position: relative;
+}
+
+.home-hero__overlay {
+    background: linear-gradient(90deg, rgba(7, 12, 24, .94) 0%, rgba(7, 12, 24, .74) 48%, rgba(7, 12, 24, .2) 100%);
+    inset: 0;
+    position: absolute;
+}
+
+.home-hero__content {
+    align-items: center;
+    display: grid;
+    gap: 32px;
+    grid-template-columns: minmax(0, 1.2fr) 380px;
+    min-height: 680px;
+    position: relative;
+    z-index: 1;
+}
+
+.home-hero__text {
+    color: #fff;
+    max-width: 760px;
+}
+
+.home-eyebrow,
+.home-section-title span,
+.home-cta__box span {
+    color: #60a5fa;
+    font-size: .8rem;
+    font-weight: 800;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+}
+
+.home-hero h1 {
+    font-size: clamp(2.7rem, 6vw, 5.8rem);
+    font-weight: 900;
+    line-height: .96;
+    margin: 14px 0 20px;
+    max-width: 850px;
+}
+
+.home-hero p {
+    color: #dbe4f0;
+    font-size: 1.15rem;
+    line-height: 1.7;
+    max-width: 620px;
+}
+
+.home-hero__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 28px;
+}
+
+.home-panel {
+    background: rgba(255, 255, 255, .95);
+    border: 1px solid rgba(255, 255, 255, .48);
+    border-radius: 8px;
+    box-shadow: 0 24px 60px rgba(0, 0, 0, .26);
+    padding: 24px;
+}
+
+.home-panel > span {
+    color: #2563eb;
+    font-size: .78rem;
+    font-weight: 800;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+}
+
+.home-panel > strong {
+    color: #111827;
+    display: block;
+    font-size: 1.55rem;
+    line-height: 1.15;
+    margin-top: 8px;
+}
+
+.home-panel__grid {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    margin: 22px 0;
+}
+
+.home-panel__grid div {
+    background: #f1f5f9;
+    border-radius: 8px;
+    padding: 14px;
+}
+
+.home-panel__grid small,
+.vehicle-card__footer small {
+    color: #64748b;
+    display: block;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.home-panel__grid b {
+    color: #0f172a;
+    display: block;
+    font-size: 2rem;
+    line-height: 1;
+    margin-top: 6px;
+}
+
+.home-benefits {
+    margin-top: -46px;
+    position: relative;
+    z-index: 2;
+}
+
+.home-benefit {
+    align-items: flex-start;
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    box-shadow: 0 14px 34px rgba(15, 23, 42, .12);
+    display: flex;
+    gap: 14px;
+    min-height: 132px;
+    padding: 22px;
+}
+
+.home-benefit i {
+    color: #2563eb;
+    font-size: 1.8rem;
+}
+
+.home-benefit strong {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 4px;
+}
+
+.home-benefit span {
+    color: #64748b;
+    line-height: 1.5;
+}
+
+.home-section-title {
+    margin: 0 auto 32px;
+    max-width: 720px;
+    text-align: center;
+}
+
+.home-section-title h2 {
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    font-weight: 900;
+    margin: 8px 0;
+}
+
+.home-section-title p {
+    color: #64748b;
+    font-size: 1.05rem;
+}
+
+.vehicle-card {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    box-shadow: 0 14px 34px rgba(15, 23, 42, .08);
+    height: 100%;
+    overflow: hidden;
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.vehicle-card:hover {
+    box-shadow: 0 20px 44px rgba(15, 23, 42, .16);
+    transform: translateY(-4px);
+}
+
+.vehicle-card__media {
+    aspect-ratio: 16 / 10;
+    background: #111827;
+    position: relative;
+}
+
+.vehicle-card__media img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.vehicle-card__badge {
+    background: #2563eb;
+    border-radius: 999px;
+    color: #fff;
+    font-size: .75rem;
+    font-weight: 800;
+    left: 16px;
+    padding: 7px 12px;
+    position: absolute;
+    text-transform: uppercase;
+    top: 16px;
+}
+
+.vehicle-card__body {
+    padding: 20px;
+}
+
+.vehicle-card__title {
+    align-items: flex-start;
+    display: flex;
+    gap: 12px;
+    justify-content: space-between;
+}
+
+.vehicle-card__title span {
+    color: #64748b;
+    display: block;
+    font-size: .8rem;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.vehicle-card__title h3 {
+    font-size: 1.45rem;
+    font-weight: 900;
+    margin: 2px 0 0;
+}
+
+.vehicle-card__title strong {
+    color: #2563eb;
+    font-size: 1.05rem;
+    white-space: nowrap;
+}
+
+.vehicle-card__specs {
+    border-bottom: 1px solid #e5e7eb;
+    border-top: 1px solid #e5e7eb;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 18px 0;
+    padding: 14px 0;
+}
+
+.vehicle-card__specs span {
+    color: #475569;
+    font-size: .9rem;
+    font-weight: 700;
+}
+
+.vehicle-card__specs i {
+    color: #2563eb;
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 3px;
+}
+
+.vehicle-card__footer {
+    align-items: center;
+    display: flex;
+    gap: 12px;
+    justify-content: space-between;
+}
+
+.home-empty {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 42px;
+    text-align: center;
+}
+
+.home-empty i {
+    color: #2563eb;
+    font-size: 3rem;
+}
+
+.home-cta {
+    padding: 0 0 56px;
+}
+
+.home-cta__box {
+    align-items: center;
+    background: #111827;
+    border-radius: 8px;
+    color: #fff;
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+    padding: 34px;
+}
+
+.home-cta__box h2 {
+    font-size: clamp(1.5rem, 3vw, 2.4rem);
+    font-weight: 900;
+    margin: 8px 0 0;
+    max-width: 760px;
+}
+
+@media (max-width: 992px) {
+    .home-hero,
+    .home-hero__content {
+        min-height: auto;
+    }
+
+    .home-hero__content {
+        grid-template-columns: 1fr;
+        padding-bottom: 72px;
+        padding-top: 72px;
+    }
+
+    .home-panel {
+        max-width: 520px;
+    }
+
+    .home-benefits {
+        margin-top: -30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .home-hero__overlay {
+        background: rgba(7, 12, 24, .82);
+    }
+
+    .home-cta__box,
+    .vehicle-card__title,
+    .vehicle-card__footer {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .vehicle-card__specs {
+        grid-template-columns: 1fr;
+    }
+}

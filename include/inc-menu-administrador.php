@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #131212;">
     <div class="container-fluid">
-        <a class="navbar-brand" href="/PI-Car-Shop/index.php">
-            <img src="/img/img/logo.png" width="32" height="32" class="d-inline-block align-text-top" alt="Logo">
+        <a class="navbar-brand" href="index.php">
+            <img src="img/img/logo.png" width="32" height="32" class="d-inline-block align-text-top" alt="Logo">
         </a>
         
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">

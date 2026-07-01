@@ -1,43 +1,28 @@
 <?php
-$titulo_da_pagina = "Vendedor Visualizar"; // Corrigido erro de digitação no título
-include "include/inc-cabecalho.php";
 include "inc-conexao.php";
 
-// 1. SEGURANÇA: Garante que o ID seja um número inteiro
-$id_vendedor = isset($_GET['id_vendedor']) ? (int)$_GET['id_vendedor'] : 0;
+$id_vendedor = isset($_GET['id_vendedor']) ? (int) $_GET['id_vendedor'] : 0;
 
-$nome = $cpf = $email = $telefone = "";
-
-if ($id_vendedor > 0) {
-    // 2. CORREÇÃO: Buscando os dados da tabela correta de vendedores
-    $sql = "SELECT nome, cpf, email, telefone FROM tb_vendedor WHERE id_vendedor = ?";
-    $stmt = mysqli_prepare($conexao, $sql);
-    
-    if ($stmt) {
-        // CORREÇÃO: Trocado $id_cliente por $id_vendedor
-        mysqli_stmt_bind_param($stmt, "i", $id_vendedor);
-        mysqli_stmt_execute($stmt);
-        $resultado = mysqli_stmt_get_result($stmt);
-        
-        if ($linha = mysqli_fetch_assoc($resultado)) {
-            $nome     = htmlspecialchars($linha['nome']); 
-            $cpf      = htmlspecialchars($linha['cpf']);
-            $email    = htmlspecialchars($linha['email']); 
-            $telefone = htmlspecialchars($linha['telefone']);
-        } else {
-            echo "<script>alert('Vendedor não encontrado.'); window.location='vendedor-listagem.php';</script>";
-            exit;
-        }
-        mysqli_stmt_close($stmt);
-    }
-} else {
-    echo "<script>alert('ID inválido.'); window.location='vendedor-listagem.php';</script>";
+if ($id_vendedor <= 0) {
+    header("Location: vendedor-listagem.php");
     exit;
 }
+
+$sql = "select nome, cpf, email, telefone, nome_da_loja, endereco from tb_vendedor where id_vendedor = {$id_vendedor}";
+$resultado = mysqli_query($conexao, $sql);
+
+if (!$linha = mysqli_fetch_assoc($resultado)) {
+    mysqli_close($conexao);
+    header("Location: vendedor-listagem.php");
+    exit;
+}
+
+$titulo_da_pagina = "Vendedor Visualizar";
+include "include/inc-cabecalho.php";
 ?>
 <body>
-    <?php include "include/inc-menu.php";?>
-    
+    <?php include "include/inc-menu.php"; ?>
+
     <main class="container mt-5">
         <div class="d-flex justify-content-between align-items-center mb-4 pb-2 border-bottom">
             <h1 class="h2 text-dark m-0">Visualizar Detalhes do Vendedor</h1>
@@ -58,29 +43,39 @@ if ($id_vendedor > 0) {
                         <div class="row g-4">
                             <div class="col-12">
                                 <label class="text-muted small text-uppercase fw-bold mb-1">Nome Completo</label>
-                                <p class="fs-5 text-dark border-bottom pb-2 mb-0 fw-semibold"><?=$nome; ?></p>
+                                <p class="fs-5 text-dark border-bottom pb-2 mb-0 fw-semibold"><?= htmlspecialchars($linha['nome']) ?></p>
                             </div>
 
                             <div class="col-sm-6">
                                 <label class="text-muted small text-uppercase fw-bold mb-1">CPF</label>
-                                <p class="fs-6 text-dark border-bottom pb-2 mb-0"><?=$cpf; ?></p>
+                                <p class="fs-6 text-dark border-bottom pb-2 mb-0"><?= htmlspecialchars($linha['cpf']) ?></p>
                             </div>
 
                             <div class="col-sm-6">
                                 <label class="text-muted small text-uppercase fw-bold mb-1">Telefone / WhatsApp</label>
-                                <p class="fs-6 text-dark border-bottom pb-2 mb-0"><?=$telefone; ?></p>
+                                <p class="fs-6 text-dark border-bottom pb-2 mb-0"><?= htmlspecialchars($linha['telefone']) ?></p>
                             </div>
 
                             <div class="col-12">
                                 <label class="text-muted small text-uppercase fw-bold mb-1">E-mail Cadastrado</label>
                                 <p class="fs-6 text-dark border-bottom pb-2 mb-0">
-                                    <a href="mailto:<?=$email; ?>" class="text-decoration-none text-primary"><?=$email; ?></a>
+                                    <a href="mailto:<?= htmlspecialchars($linha['email']) ?>" class="text-decoration-none text-primary"><?= htmlspecialchars($linha['email']) ?></a>
                                 </p>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <label class="text-muted small text-uppercase fw-bold mb-1">Nome da Loja</label>
+                                <p class="fs-6 text-dark border-bottom pb-2 mb-0"><?= htmlspecialchars($linha['nome_da_loja']) ?></p>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <label class="text-muted small text-uppercase fw-bold mb-1">Endereco</label>
+                                <p class="fs-6 text-dark border-bottom pb-2 mb-0"><?= htmlspecialchars($linha['endereco']) ?></p>
                             </div>
                         </div>
                     </div>
                     <div class="card-footer bg-light d-flex justify-content-end gap-2 py-3">
-                        <a href="vendedor-editar.php?id_vendedor=<?=$id_vendedor;?>" class="btn btn-warning px-4">
+                        <a href="vendedor-editar.php?id_vendedor=<?= $id_vendedor ?>" class="btn btn-warning px-4">
                             <i class="bi bi-pencil-square me-1"></i> Editar Dados
                         </a>
                     </div>
@@ -89,8 +84,9 @@ if ($id_vendedor > 0) {
         </div>
     </main>
 
-<?php 
+<?php
 mysqli_close($conexao);
 include "include/inc-footer.php";
 ?>
 </body>
+</html>

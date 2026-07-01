@@ -1,18 +1,39 @@
 <?php
-$id_vendedor = $_GET['id_vendedor'];
-$nome = $_POST['nome'];
-$cpf = $_POST['cpf'];
-$email = $_POST['email'];
-$telefone = $_POST['telefone'];
-$senha = $_POST['senha'];
-$nome_da_loja = $_POST['nome_da_loja'];
-$endereco = $_POST['endereco'];
-$foto = $_POST['foto'];
+$id_vendedor = isset($_GET['id_vendedor']) ? (int) $_GET['id_vendedor'] : 0;
+
+if ($id_vendedor <= 0) {
+    header('Location: vendedor-listagem.php');
+    exit;
+}
+
+if ($_SERVER['REQUEST_METHOD'] != 'POST') {
+    header('Location: vendedor-editar.php?id_vendedor=' . $id_vendedor);
+    exit;
+}
 
 include "inc-conexao.php";
-$sql = "update tb_cliente set id_vendedor='{$id_vendedor}', nome='{$nome}', cpf={$cpf}, email='{$email}', telefone='{$telefone}', senha='{$senha}' where id_cliente={$id_vendedor}";
-$resultado = mysqli_query($conexao, $sql);
- 
+
+$nome = mysqli_real_escape_string($conexao, $_POST['nome'] ?? '');
+$cpf = mysqli_real_escape_string($conexao, $_POST['cpf'] ?? '');
+$email = mysqli_real_escape_string($conexao, $_POST['email'] ?? '');
+$telefone = mysqli_real_escape_string($conexao, $_POST['telefone'] ?? '');
+$senha = mysqli_real_escape_string($conexao, $_POST['senha'] ?? '');
+$nome_da_loja = mysqli_real_escape_string($conexao, $_POST['nome_da_loja'] ?? '');
+$endereco = mysqli_real_escape_string($conexao, $_POST['endereco'] ?? '');
+
+$sql = "update tb_vendedor set
+        nome = '{$nome}',
+        cpf = '{$cpf}',
+        email = '{$email}',
+        telefone = '{$telefone}',
+        senha = '{$senha}',
+        nome_da_loja = '{$nome_da_loja}',
+        endereco = '{$endereco}'
+        where id_vendedor = {$id_vendedor}";
+
+mysqli_query($conexao, $sql);
 mysqli_close($conexao);
-header('Location:vendedor-listagem.php');
+
+header('Location: vendedor-listagem.php');
+exit;
 ?>

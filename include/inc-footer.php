@@ -6,7 +6,7 @@
       <div class="col-12 col-md-4 text-center text-md-start d-flex flex-column justify-content-between">
         <div>
           <a href="index.php" class="d-inline-block mb-3">
-            <img src="/img/img/logo.png" alt="Logo" width="40" height="32">
+            <img src="img/img/logo.png" alt="Logo" width="40" height="32">
           </a>
           <p class="text-white-50 small pe-md-4">Sua plataforma completa para gerenciamento e vendas de veículos do Car Shop.</p>
         </div>
