@@ -483,3 +483,24 @@ flip-card-inner {
 .ancoras{
     scroll-margin-top: 150px;
 }
+
+/* Atualize a regra existente incluindo o flex-shrink e display inline-flex */
+.icon-box {
+    width: 60px;
+    height: 60px;
+    background-color: #e7f1ff;
+    color: #0d6efd;
+    border-radius: 10px;
+    display: inline-flex; /* Alinha perfeitamente elementos internos menores */
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-shrink: 0;       /* Bloqueia qualquer tentativa do card de esmagar o box */
+}
+
+/* Força o SVG a manter proporções quadradas exatas */
+.icon-box svg {
+    width: 24px !important;
+    height: 24px !important;
+    flex-shrink: 0;       /* Evita que o SVG se distorça internamente */
+}

@@ -49,29 +49,32 @@ include "include/inc-cabecalho.php";
         <div class="card card-premium h-100 p-4 shadow-sm bg-white">
           <div class="icon-box">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-patch-check-fill" viewBox="0 0 16 16">
-              <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.078-.078-4.5-4.5a.5.5 0 0 0-.708 0z" />
+              <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.293l2.646-2.647a.5.5 0 0 1 .708.708" />
             </svg>
           </div>
           <h5 class="fw-bold text-dark">Procedência Rígida</h5>
           <p class="text-muted small mb-0">Cada veículo inserido em nossa plataforma passa por triagem minuciosa com laudo 100% aprovado.</p>
         </div>
       </div>
+
       <div class="col-md-4">
         <div class="card card-premium h-100 p-4 shadow-sm bg-white">
           <div class="icon-box">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-award-fill" viewBox="0 0 16 16">
               <path d="m8 0 1.669.864 1.858-.282.842 1.68 1.337 1.32-.26 1.866.88 1.66-1.127 1.503.312 1.85-1.748.704-.747 1.722L8 11.81l-1.636.853-.747-1.722-1.748-.704.312-1.85-1.127-1.503.88-1.66-.26-1.866 1.337-1.32.842-1.68L6.331.864z" />
+              <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1z" />
             </svg>
           </div>
           <h5 class="fw-bold text-dark">Padrão de Excelência</h5>
           <p class="text-muted small mb-0">Atendimento personalizado focado no perfil e na real necessidade de mobilidade de cada cliente.</p>
         </div>
       </div>
+
       <div class="col-md-4">
         <div class="card card-premium h-100 p-4 shadow-sm bg-white">
           <div class="icon-box">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-handshake-fill" viewBox="0 0 16 16">
-              <path d="M7.177 9.244a6 6 0 0 0-2.422-1.812l-.002-.013a1 1 0 0 0-1.094-.633L1 7.211V14a1 1 0 0 0 1 1h7.453a1 1 0 0 0 .73-.324l3.12-3.422a1 1 0 0 0-.214-1.555L11 8.211l-3.823 1.033z" />
+              <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5" />
             </svg>
           </div>
           <h5 class="fw-bold text-dark">Negociação Segura</h5>
@@ -79,7 +82,6 @@ include "include/inc-cabecalho.php";
         </div>
       </div>
     </div>
-
   </main>
 
   <?php include "include/inc-footer.php" ?>

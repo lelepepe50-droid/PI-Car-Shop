@@ -117,8 +117,8 @@ include "include/inc-cabecalho.php";
                 <input type="text" name="foto" class="form-control" value="<?= htmlspecialchars($foto) ?>" required>
             </div>
 
-            <button type="submit" class="btn btn-primary">Salvar Alteracoes</button>
-            <a href="veiculos-listagem.php" class="btn btn-light">Cancelar</a>
+            <button type="submit" class="btn btn-primary">Salvar Alterações</button>
+            <a href="index.php" class="btn btn-light">Cancelar</a>
         </form>
     </main>
 <?php

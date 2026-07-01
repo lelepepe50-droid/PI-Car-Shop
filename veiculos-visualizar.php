@@ -26,7 +26,7 @@ include "include/inc-cabecalho.php";
     <main class="container my-5 flex-shrink-0">
         <div class="d-flex justify-content-between align-items-center mb-4 pb-2 border-bottom">
             <h1 class="h2 text-dark m-0">Detalhes do Veiculo</h1>
-            <a href="veiculos-listagem.php" class="btn btn-outline-secondary btn-sm">
+            <a href="index.php" class="btn btn-outline-secondary btn-sm">
                 <i class="bi bi-arrow-left"></i> Voltar para a lista
             </a>
         </div>
