@@ -35,6 +35,8 @@ include "include/inc-cabecalho.php"
                             <div class="fw-bold fs-5 text-warning">
                                 R$ <?= number_format($linha['preco'], 2, ',', '.'); ?>
                             </div>
+                        <input id="imagem" type="file" name="imagem" accept="image/*" required>
+tem menu de contexto
                         </div>    
                     </div>  
                 </div>
