@@ -43,7 +43,7 @@ foreach ($veiculos as $veiculo) {
                         <a href="#estoque" class="btn btn-primary btn-lg">
                             <i class="bi bi-car-front me-2"></i>Ver estoque
                         </a>
-                        <a href="vendedor-cadastrar.php" class="btn btn-outline-light btn-lg">
+                        <a href="veiculos-cadastrar.php" class="btn btn-outline-light btn-lg">
                             <i class="bi bi-shop me-2"></i>Anunciar veiculo
                         </a>
                     </div>
