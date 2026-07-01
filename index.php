@@ -79,7 +79,6 @@ foreach ($veiculos as $veiculo) {
                                 <strong>Compra com procedencia</strong>
                                 <span>Informacoes organizadas para comparar antes de decidir.</span>
                             </div>
-<<<<<<< HEAD
                         </div>
                     </div>
                     <div class="col-md-4">
@@ -99,13 +98,6 @@ foreach ($veiculos as $veiculo) {
                                 <span>Cadastre seu interesse e avance para a negociacao.</span>
                             </div>
                         </div>
-                    </div>
-=======
-                        <input id="imagem" type="file" name="imagem" accept="image/*" required>
-tem menu de contexto
-                        </div>    
-                    </div>  
->>>>>>> c00403d20510b7d4790f9241490300097cf688ba
                 </div>
             </div>
         </section>

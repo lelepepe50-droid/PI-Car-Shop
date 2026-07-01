@@ -113,7 +113,6 @@
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
 }
 
-<<<<<<< HEAD
 .home-page {
     background: #f5f7fb;
     color: #111827;
@@ -457,7 +456,6 @@
         grid-template-columns: 1fr;
     }
 }
-=======
 flip-card-inner {
     position: relative;
     width: 100%;
@@ -485,4 +483,3 @@ flip-card-inner {
 .ancoras{
     scroll-margin-top: 150px;
 }
->>>>>>> c00403d20510b7d4790f9241490300097cf688ba
